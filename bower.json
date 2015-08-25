@@ -6,7 +6,9 @@
     "jquery": "~2.1.0",
     "lodash": "~2.4.1",
     "backbone": "~1.1.0",
-    "modernizr": "~2.7.1"
+    "modernizr": "~2.7.1",
+    "underscore": "~1.8.3",
+    "backbonefire": "~0.5.1"
   },
   "devDependencies": {}
 }
