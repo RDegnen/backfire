@@ -3,12 +3,12 @@
 var AppView = Backbone.View.extend({
   el: $('#backfire'),
   events: {
-    "click add-todo": "createTodo",
+    'click add-todo': 'createTodo',
   },
 
   initialize: function() {
-    this.list = this.$("#todo-list");
-    this.input = this.$("#new-todo");
+    this.list = this.$('#todo-list');
+    this.input = this.$('#new-todo');
 
     this.listenTo(this.collection, 'add', this.addOne);
   },

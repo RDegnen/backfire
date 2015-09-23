@@ -1,5 +1,5 @@
 'use strict';
 
 var Todo = Backbone.Model.extend({
-  defaults: { title: "New Todo" }
+  defaults: { title: 'New Todo' }
 });
