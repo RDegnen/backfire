@@ -24,5 +24,10 @@ var AppView = Backbone.View.extend({
     this.collection.create({title: this.input.val()});
 
     this.input.val('');
+  },
+
+  clearDone: function() {
+    _.invoke(collection.done(), 'destroy');
+    return false;
   }
 });
