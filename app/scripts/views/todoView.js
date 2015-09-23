@@ -21,10 +21,6 @@ var TodoView = Backbone.View.extend({
 
   toggleDone: function() {
     this.model.toggle();
-  },
-
-  clear: function() {
-    this.model.destroy();
   }
 
 });
