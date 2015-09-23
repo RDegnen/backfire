@@ -3,7 +3,7 @@
 var AppView = Backbone.View.extend({
   el: $('#backfire'),
   events: {
-    'click add-todo': 'createTodo',
+    'click #add-todo': 'createTodo',
   },
 
   initialize: function() {
