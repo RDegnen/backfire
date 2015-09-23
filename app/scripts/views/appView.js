@@ -4,6 +4,7 @@ var AppView = Backbone.View.extend({
   el: $('#backfire'),
   events: {
     'click #add-todo': 'createTodo',
+    'click #remove': 'clearDone'
   },
 
   initialize: function() {
@@ -24,5 +25,10 @@ var AppView = Backbone.View.extend({
     this.collection.create({title: this.input.val()});
 
     this.input.val('');
+  },
+
+  clearDone: function() {
+    _.invoke(this.collection.done(), 'destroy');
+    return false;
   }
 });
