@@ -18,12 +18,15 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <div id="backfire">
-            <ul id="todo-list"></ul>
-            <input type="text" id="new-todo" placeholder="New Todo"/>
-            <button id="add-todo">Add</button>
+        <div id="container-div" class="container-fluid">
+            <div class="row">
+                <div id="backfire" class="col-md-6 col-md-offset-3">
+                    <input type="text" id="new-todo" placeholder="New Todo"/>
+                    <button id="add-todo" class="btn btn-extend">Add</button>
+                    <ul id="todo-list"></ul>
+                </div>
+            </div>
         </div>
-
 
         <!-- build:js scripts/vendor.js -->
         <script src="bower_components/jquery/dist/jquery.js"></script>

@@ -2,7 +2,7 @@
 
 var TodoView = Backbone.View.extend({
   tagName: 'li',
-  template: _.template('<%= title %>'),
+  template: _.template("<input type='checkbox'> <%= title %>"),
 
   initialize: function() {
     this.listenTo(this.model, 'change', this.render);
