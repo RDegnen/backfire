@@ -2,7 +2,7 @@
 
 var TodoView = Backbone.View.extend({
   tagName: 'li',
-  template: _.template("<input class='toggle' type='checkbox'> <label><%= title %></label>"),
+  template: _.template("<input class='toggle' type='checkbox'> <label><%= title %></label>\n<hr>"),
 
   events: {
     'click .toggle': 'toggleDone'
