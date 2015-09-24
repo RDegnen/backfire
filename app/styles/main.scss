@@ -19,12 +19,6 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/assets/fonts/bootstr
       font-size: 19px;
     }
 
-    .btn-extend {
-      background-color: $firebase-blue;
-      color: white;
-      height: 40px;
-    }
-
     #todo-list {
       list-style: none;
       margin-left: -40px;
@@ -33,6 +27,19 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/assets/fonts/bootstr
       li {
         margin: 10px 0 10px 0;
       }
+
+      li.done {
+
+        label {
+          text-decoration: line-through;
+          color: lightgrey;
+        }
+      }
+    }
+
+    .btn-remove {
+      background-color: $firebase-blue;
+      color: white;
     }
   }
 }

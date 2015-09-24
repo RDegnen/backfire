@@ -3,7 +3,7 @@
 var AppView = Backbone.View.extend({
   el: $('#backfire'),
   events: {
-    'click #add-todo': 'createTodo',
+    'keypress #new-todo': 'createTodo',
     'click #remove': 'clearDone'
   },
 
@@ -21,6 +21,7 @@ var AppView = Backbone.View.extend({
 
   createTodo: function(e) {
     if (!this.input.val()) { return; }
+    if (e.keyCode !== 13) { return; }
 
     this.collection.create({title: this.input.val()});
 
