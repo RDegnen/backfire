@@ -3,43 +3,46 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/assets/fonts/bootstr
 @import 'bootstrap-sass-official/assets/stylesheets/bootstrap.scss';
 @import 'variables';
 
-#container-div {
-  margin-top: 100px;
+body {
+  margin: 0 auto;
+  width: 500px;
+}
 
-  #backfire {
-    border: 2px solid lightgrey;
-    border-radius: 5px;
-    padding: 20px;
 
-    #new-todo {
-      width: 300px;
-      height: 40px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      font-size: 19px;
+#backfire {
+  border: 2px solid $firebase-blue;
+  border-radius: 5px;
+  padding: 20px;
+  background: white;
+
+  #new-todo {
+    width: 300px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 19px;
+  }
+
+  #todo-list {
+    list-style: none;
+    margin-left: -40px;
+    font-size: 20px;
+
+    li {
+      margin: 10px 0 10px 0;
     }
 
-    #todo-list {
-      list-style: none;
-      margin-left: -40px;
-      font-size: 20px;
-
-      li {
-        margin: 10px 0 10px 0;
+    li.done {
+      label {
+        text-decoration: line-through;
+        color: $dark-grey;
       }
-
-      li.done {
-
-        label {
-          text-decoration: line-through;
-          color: lightgrey;
-        }
-      }
-    }
-
-    .btn-remove {
-      background-color: $firebase-blue;
-      color: white;
     }
   }
+
+  .btn-remove {
+    background-color: $firebase-blue;
+    color: white;
+  }
 }
+
