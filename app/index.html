@@ -2,7 +2,7 @@
 <html class="no-js" lang="">
     <head>
         <meta charset="utf-8">
-        <title>Backfire</title>
+        <title>Backfire Todo</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -18,15 +18,14 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <div id="container-div" class="container-fluid">
-            <div class="row">
-                <div id="backfire" class="col-md-6 col-md-offset-3">
-                    <input type="text" id="new-todo" placeholder="New Todo"/>
-                    <button id="add-todo" class="btn btn-extend">Add</button>
-                    <ul id="todo-list"></ul>
-                    <button id="remove">Remove Selected</button>
-                </div>
-            </div>
+        <div id="title-div">
+            <h1 id="title"><span id="title-back">Back</span><span id="title-fire">Fire</span> <span id="title-todo">Todo</span></h1>
+        </div>
+
+        <div id="backfire">
+            <input type="text" id="new-todo" placeholder="New Todo"/>
+            <ul id="todo-list"></ul>
+            <button id="remove" class="btn btn-remove">Remove Selected</button>
         </div>
 
         <!-- build:js scripts/vendor.js -->
