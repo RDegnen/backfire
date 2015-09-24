@@ -14,7 +14,19 @@ body {
 
   #title {
     font-size: 60px;
-    font-style: italic;
+
+    #title-back {
+      color: $firebase-blue;
+    }
+
+    #title-fire {
+      color: $orange;
+    }
+
+    #title-todo {
+      font-family: Papyrus, fantasy;
+      font-style: italic;
+    }
   }
 }
 
