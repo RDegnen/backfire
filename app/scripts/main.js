@@ -15,6 +15,11 @@ function showBtn () {
   }
 }
 
+function checkAll() {
+  $('li').addClass('done');
+  $('#remove').show('slow');
+}
+
 $(document).ready(function() {
   init();
 
@@ -26,5 +31,9 @@ $(document).ready(function() {
 
   $('#remove').on('click', function() {
     $('#remove').hide();
+  });
+
+  $('#check-all').on('click', function() {
+    checkAll();
   });
 });

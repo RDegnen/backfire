@@ -4,7 +4,8 @@ var AppView = Backbone.View.extend({
   el: $('#backfire'),
   events: {
     'keypress #new-todo': 'createTodo',
-    'click #remove': 'clearDone'
+    'click #remove': 'clearDone',
+    'click #check-all': 'toggleAllDone'
   },
 
   initialize: function() {
@@ -26,6 +27,14 @@ var AppView = Backbone.View.extend({
     this.collection.create({title: this.input.val()});
 
     this.input.val('');
+  },
+
+  toggleAllDone: function() {
+    var hasDone = $('ul').find('li').hasClass('done');
+    this.collection.each(function(todo) {
+      todo.save({'done': hasDone});
+      $('.done').find('input').attr('checked', 'checked');
+    });
   },
 
   clearDone: function() {
