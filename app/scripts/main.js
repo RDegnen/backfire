@@ -17,7 +17,7 @@ function showBtn () {
 
 function checkAll() {
   $('li').addClass('done');
-  $('#remove').show('slow');
+  showBtn();
 }
 
 $(document).ready(function() {
@@ -36,4 +36,6 @@ $(document).ready(function() {
   $('#check-all').on('click', function() {
     checkAll();
   });
+
+
 });
