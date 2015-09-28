@@ -9,9 +9,9 @@ function showBtn () {
   var hasDone = $('ul').find('li').hasClass('done');
 
   if (hasDone) {
-    $('#remove').show();
+    $('#remove').show('slow');
   } else {
-    $('#remove').hide();
+    $('#remove').hide('slow');
   }
 }
 
