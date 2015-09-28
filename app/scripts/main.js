@@ -23,4 +23,8 @@ $(document).ready(function() {
   $('ul').on('click', function() {
     showBtn();
   });
+
+  $('#remove').on('click', function() {
+    $('#remove').hide();
+  });
 });
